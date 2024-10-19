@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Brands Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            color: #3e3e3e;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #4c9baf;
+            margin-top: 20px;
+            font-size: 3em;
+            text-shadow: 1px 1px #b2ebf2;
+        }
+        .nav-bar {
+            background-color: #4c9baf;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .nav-bar a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        .animals-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4c9baf;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .animals-link:hover {
+            color: #ffeb3b;
+            transform: scale(1.1);
+        }
+        .content-section {
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            max-width: 800px;
+        }
+        .content-section:hover {
+            background-color: #f1f8e9;
+            transform: scale(1.02);
+        }
+        .content-section h2 {
+            color: #4c9baf;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px #b2ebf2;
+        }
+        .content-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .shoe-brands {
+            background-color: #f0f0f0;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .shoe-brands h3 {
+            font-size: 1.8em;
+            color: #333;
+        }
+        .shoe-brands a {
+            display: inline-block;
+            background-color: #388e3c;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .shoe-brands a:hover {
+            background-color: #388e3c;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #4c9baf;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Shoe Brands Home</h1>
+    <div class="nav-bar">
+        <a href="{% url 'shoe_brands_info' %}">Info</a>
+        <a href="{% url 'shoe_brands_contact' %}">Contact</a>
+    </div>
+    
+
+    <div class="content-section">
+        <h2>Welcome to Shoe Brands Home!</h2>
+        <p>Explore the world of shoes where style meets comfort! We bring you the latest trends and timeless classics from various shoe brands. Whether you're looking for sports shoes, casual sneakers, elegant heels, or sturdy boots, we have something for everyone.</p>
+        
+        <h2>Our Top Brands</h2>
+        <p>Here are some of the top shoe brands you will find in our collection:</p>
+        <ul>
+            <li><strong>Nike</strong> - Renowned for its innovative designs and performance-driven footwear.</li>
+            <li><strong>Adidas</strong> - Known for its stylish sneakers and commitment to sustainability.</li>
+            <li><strong>Puma</strong> - Offers trendy shoes that blend fashion with functionality.</li>
+            <li><strong>Reebok</strong> - Perfect for fitness enthusiasts with its versatile workout shoes.</li>
+            <li><strong>New Balance</strong> - Focuses on comfort and support, ideal for running and walking.</li>
+        </ul>
+
+        <h2>Why Choose Us?</h2>
+        <p>We are dedicated to providing the best shopping experience with:</p>
+        <ul>
+            <li>A wide selection of quality brands</li>
+            <li>Affordable prices and special discounts</li>
+            <li>Exceptional customer service and support</li>
+            <li>Easy returns and exchanges</li>
+        </ul>
+    </div>
+
+    <div class="shoe-brands mt-5">
+        <h3>Animals Home</h3>
+        <p>Explore our blog about animals</p>
+        <a href="{% url 'animals_home' %}">Visit Shoe Brands Home</a>
+    </div>
+
+    <footer class="mt-5">
+        <p>&copy; 2024 Shoe Brands Home. All rights reserved. | Step into Style!</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

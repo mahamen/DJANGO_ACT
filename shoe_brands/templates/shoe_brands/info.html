@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Brands Info</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            color: #3e3e3e;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #4c9baf;
+            margin-top: 20px;
+            font-size: 3em;
+            text-shadow: 1px 1px #b2ebf2;
+        }
+        .nav-bar {
+            background-color: #4c9baf;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .nav-bar a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        .content-section {
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            max-width: 800px;
+        }
+        .content-section:hover {
+            background-color: #f1f8e9;
+            transform: scale(1.02);
+        }
+        .content-section h2 {
+            color: #4c9baf;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px #b2ebf2;
+        }
+        .content-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #4c9baf;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Shoe Brands Information</h1>
+    <div class="nav-bar">
+        <a href="{% url 'shoe_brands_home' %}">Home</a>
+        <a href="{% url 'shoe_brands_contact' %}">Contact</a>
+    </div>
+
+    <div class="content-section">
+        <h2>About the Brands</h2>
+        <p>Our collection features a variety of popular shoe brands, each known for their unique styles, innovative technologies, and commitment to quality. Here are some highlights:</p>
+
+        <h2>Nike</h2>
+        <p>Nike is a global leader in athletic footwear, known for its iconic swoosh logo and innovative technologies like Flyknit and Zoom Air. The brand offers a wide range of shoes for sports and casual wear.</p>
+
+        <h2>Adidas</h2>
+        <p>Adidas is famous for its stylish and functional shoes, featuring the signature three stripes. The brand focuses on sustainability and incorporates eco-friendly materials into many of its products.</p>
+
+        <h2>Puma</h2>
+        <p>Puma combines sports and lifestyle, creating shoes that are both functional and fashionable. Their designs often feature bold colors and unique styles, appealing to a younger audience.</p>
+
+        <h2>Reebok</h2>
+        <p>Reebok is well-known for its performance shoes, especially in the fitness and training category. Their shoes are designed to provide support and comfort during intense workouts.</p>
+
+        <h2>New Balance</h2>
+        <p>New Balance emphasizes comfort and fit, offering a variety of widths to accommodate all foot types. Their running shoes are popular among serious runners for their cushioning and support.</p>
+
+        <h2>Conclusion</h2>
+        <p>Choosing the right shoes can enhance your performance and provide the comfort you need. Explore our collection to find the perfect pair for your lifestyle!</p>
+    </div>
+
+    <footer class="mt-5">
+        <p>&copy; 2024 Shoe Brands Info. All rights reserved. | Step into Style!</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

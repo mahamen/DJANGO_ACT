@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals Info</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e8f5e9;
+            color: #3e3e3e;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #388e3c;
+            margin-top: 20px;
+            font-size: 3em;
+            text-shadow: 2px 2px #81c784;
+        }
+        .nav-bar {
+            background-color: #4caf50;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a {
+            color: #fff;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .nav-bar a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        .info-section {
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .info-section:hover {
+            background-color: #f1f8e9;
+            transform: scale(1.02);
+        }
+        .info-section h2 {
+            color: #5d4037;
+            text-shadow: 1px 1px #ffcc80;
+            font-size: 2em;
+        }
+        .info-section p {
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        .animal-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .animal-item {
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .animal-item:hover {
+            transform: scale(1.05);
+        }
+        .animal-item h3 {
+            font-size: 1.4em;
+            color: #388e3c;
+            margin: 10px 0;
+        }
+        .animal-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Animals Info</h1>
+    <div class="nav-bar">
+        <a href="{% url 'animals_home' %}">Home</a>
+        <a href="{% url 'animals_contact' %}">Contact</a>
+    </div>
+
+    <div class="info-section">
+        <h2>All About Animals</h2>
+        <p>
+            Animals are fascinating creatures that make our world lively and beautiful. Each species is unique in its appearance, behavior, and 
+            way of life. From the majestic lions of the African savannah to the tiny insects in our backyard, every animal has a special role in 
+            nature.
+        </p>
+        <p>
+            The study of animals is called <span class="highlight">zoology</span>. Zoologists explore how animals live, their habitats, and their 
+            interaction with the environment. Let's dive deeper and learn more fun facts about the wonderful world of animals!
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h2>Meet Some Amazing Animals</h2>
+        <div class="animal-list">
+            <div class="animal-item">
+                <h3>Elephant</h3>
+                <p>The largest land animal on Earth, known for its memory and intelligence.</p>
+            </div>
+            <div class="animal-item">
+                <h3>Penguin</h3>
+                <p>A flightless bird that swims beautifully in the icy waters of the Antarctic.</p>
+            </div>
+            <div class="animal-item">
+                <h3>Tiger</h3>
+                <p>The largest species in the cat family, recognized for its bold stripes.</p>
+            </div>
+            <div class="animal-item">
+                <h3>Kangaroo</h3>
+                <p>Found in Australia, known for its strong legs and hopping movement.</p>
+            </div>
+            <div class="animal-item">
+                <h3>Monkey</h3>
+                <p>Clever primates that use tools, communicate, and show complex emotions.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <p>&copy; 2024 Animals Home. All rights reserved. | Designed with ❤️ for Kids</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

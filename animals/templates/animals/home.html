@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e8f5e9;
+            color: #3e3e3e;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #388e3c;
+            margin-top: 20px;
+            font-size: 3em;
+            text-shadow: 2px 2px #81c784;
+        }
+        nav {
+            background-color: #4caf50;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        .content-section {
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .content-section:hover {
+            background-color: #f1f8e9;
+            transform: scale(1.02);
+        }
+        .content-section h2 {
+            color: #5d4037;
+            text-shadow: 1px 1px #ffcc80;
+            font-size: 2em;
+        }
+        .content-section p {
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        .highlight {
+            color: #8d6e63;
+            font-weight: bold;
+            background-color: #ffeb3b;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .fun-facts li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #388e3c;
+        }
+        .fun-facts li:hover {
+            color: #f57c00;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .shoe-brands {
+            background-color: #f0f0f0;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .shoe-brands h3 {
+            font-size: 1.8em;
+            color: #333;
+        }
+        .shoe-brands a {
+            display: inline-block;
+            background-color: #4c9baf;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .shoe-brands a:hover {
+            background-color: #388e3c;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Animals Home</h1>
+    <nav class="text-center">
+        <a href="{% url 'animals_info' %}">Info</a>
+        <a href="{% url 'animals_contact' %}">Contact</a>
+    </nav>
+
+    <div class="content-section">
+        <h2>About Animals</h2>
+        <p>
+            Animals are amazing creatures that live all around us, from the deep blue sea to the tall mountain tops. They come in many shapes, 
+            sizes, and colors. Some animals, like <span class="highlight">lions</span> and <span class="highlight">tigers</span>, are big and strong, 
+            while others, like <span class="highlight">butterflies</span> and <span class="highlight">birds</span>, are colorful and light.
+        </p>
+        <p>
+            Did you know? Some animals can even change their colors to hide from danger! The animal world is full of surprises and wonders waiting to 
+            be explored.
+        </p>
+    </div>
+
+    <div class="content-section">
+        <h2>The Importance of Protecting Animals</h2>
+        <p>
+            It's important to take care of animals and their homes. Many animals, like the <span class="highlight">panda</span> and the 
+            <span class="highlight">polar bear</span>, need our help because their natural homes are disappearing. We can help protect them by 
+            planting trees, recycling, and being kind to nature.
+        </p>
+        <p>
+            Every small step we take can make a big difference for the animals. Let's all work together to keep our world a safe and happy place 
+            for them!
+        </p>
+    </div>
+
+    <div class="content-section">
+        <h2>Fun Facts About Animals</h2>
+        <ul class="fun-facts">
+            <li>The cheetah is the fastest land animal, running at speeds up to 70 mph!</li>
+            <li>Some sea turtles can live to be over 100 years old.</li>
+            <li>Giraffes have blue tongues that are around 20 inches long.</li>
+            <li>A group of flamingos is called a "flamboyance."</li>
+            <li>Octopuses can squeeze through spaces as small as a coin.</li>
+        </ul>
+    </div>
+
+    <div class="shoe-brands mt-5">
+        <h3>Shoe Brands Home</h3>
+        <p>Explore our amazing collection of shoe brands. Perfect for every occasion!</p>
+        <a href="{% url 'shoe_brands_home' %}">Visit Shoe Brands Home</a>
+    </div>
+
+    <footer class="mt-5">
+        <p>&copy; 2024 Animals Home. All rights reserved. | Designed with ❤️ for Kids</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
